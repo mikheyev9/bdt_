@@ -214,15 +214,15 @@ class Bot:
 url = 'https://spb.ticketland.ru/teatry/bdt-imtovstonogova/dzhuletta/'
 x = Bot() 
 
-#new_url = x.set_session(url) # set Session
-#t = x.get_json_with_all_availible_places(new_url)
-#x.json_data_override(t, write_json=True) # SEE JSON ON YOUR PC TO SELECT seats AND row 
+new_url = x.set_session(url) # set Session
+t = x.get_json_with_all_availible_places(new_url)
+x.json_data_override(t, write_json=True) # SEE JSON ON YOUR PC TO SELECT seats AND row 
 
 #next  fill -> seats='str',row=int, places_count=int, name='str',
 #                    surname='str', email='str', json_data=box
 
 def run(url):
-    ''' rung after filling
+    ''' run after filling
     '''
     x.set_session(url)
     with open('NEWdzhuletta.json', 'r', encoding='utf-8') as file:
@@ -233,7 +233,7 @@ def run(url):
         
         print(link_for_pay)
 
-run(url)
+#run(url)
 
 
 
