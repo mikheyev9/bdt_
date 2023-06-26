@@ -222,7 +222,7 @@ x = Bot()
 #                    surname='str', email='str', json_data=box
 
 def run(url):
-    ''' run after filling
+    ''' rung after filling
     '''
     x.set_session(url)
     with open('NEWdzhuletta.json', 'r', encoding='utf-8') as file:
