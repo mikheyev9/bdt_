@@ -3,6 +3,7 @@ bot1 = Bot()
 1) Создать сессию , можно добавить прокси и юзер агент
 
 url = 'https://spb.ticketland.ru/teatry/bdt-imtovstonogova/privideniya-bdt-imeni-tovstonogova/'
+
 new_url = bot1.set_session(url) #  -> В ответ придёт url с местами для этого мероприятия
 
 2) places = bot1.get_json_with_all_availible_places(new_url)  возвращает json со всеми доступными для покупки местами
